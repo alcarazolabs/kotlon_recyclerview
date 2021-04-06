@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_persona"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:id="@+id/txt_nombre_persona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Nombre de la persona"
+        android:layout_toRightOf="@+id/img_persona"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginStart="5dp"
+        />
+    <TextView
+        android:id="@+id/txt_detalle_persona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Mi detalle"
+        android:layout_below="@+id/txt_nombre_persona"
+        android:layout_toRightOf="@+id/img_persona"
+        android:textSize="13sp"
+        android:layout_marginStart="5dp"
+        />
+</RelativeLayout>
